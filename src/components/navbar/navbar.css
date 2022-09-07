@@ -96,7 +96,19 @@ li {
     font-size: 1.8rem;
 }
 
-/* @media (max-width: 1080px) {
+.navbar-media .hanburger-menu {
+    display: none;
+}
+
+.login {
+    color: #3b5998;
+}
+
+.cart {
+    color: #c32aa3;
+}
+
+ @media (max-width: 1080px) {
     .navbar-main {
         height: 8rem;
         grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
@@ -128,4 +140,104 @@ li {
         position: relative;
         z-index: 99;
     }
-} */
+
+    .mobile-navbar-menu {
+        background-color: white;
+        height: 20rem;
+        display: grid;
+        grid-column: 2/5;
+        align-items : center;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+    }
+
+    .mobile-navbar-menu ul {
+        height: 20rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .mobile-navbar-menu ul li:first-child {
+        transition-delay: 0.2s;
+    }
+
+    .navbar-media {
+        grid-row: 1/2;
+        grid-column: 3/5;
+        justify-items: end;
+        align-items: center;
+        transition: all 2s linear;
+    }
+
+    .navbar-media .media {
+        height: 0;
+        display: none;
+    }
+
+    .navbar-media {
+        height: 7rem;
+        display: flex;
+        justify-self: end;
+        align-items: center;
+    }
+
+    .navbar-media .hanburger-menu {
+        display: block;
+        font-size: 2.5rem;
+    }
+} 
+
+@media (max-width: 798px) {
+    .navbar-main {
+      height: 6rem;
+      grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+    }
+
+    .navbar-logo, .navbar-media ul {
+        height: 6rem;
+    }
+
+    .navbar-media {
+        height: 6rem;
+        display: flex;
+        justify-self: end;
+        align-items: center;
+    }
+
+    .navbar-media .hanburger-menu {
+        display: block;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar-main {
+      height: 6rem;
+      grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+    }
+
+    .navbar-logo .navbar-media ul {
+        height: 6rem;
+    }
+
+    .navbar-logo h2 {
+        font-size: 2rem;
+    }
+
+    .navbar-media {
+        height: 6rem;
+        display: flex;
+        justify-self: end;
+        align-items: center  
+    }
+
+    .navbar-media .hanburger-menu {
+        display: block;
+        font-size: 2.5rem;
+    }
+}
