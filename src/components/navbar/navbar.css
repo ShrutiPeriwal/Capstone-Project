@@ -119,6 +119,10 @@ li {
     .navbar-media ul {
         height: 8rem;
     }
+
+    .navbar-media .hanburger-menu {
+        display: none;
+    }
 }
 
 @media (max-width: 998px) {
@@ -187,8 +191,8 @@ li {
     }
 
     .navbar-media .hanburger-menu {
-        display: block;
-        font-size: 2.5rem;
+        display: none;
+        /* font-size: 2.5rem; */
     }
 } 
 
@@ -210,8 +214,8 @@ li {
     }
 
     .navbar-media .hanburger-menu {
-        display: block;
-        font-size: 2.5rem;
+        display: none;
+        /* font-size: 2.5rem; */
     }
 }
 

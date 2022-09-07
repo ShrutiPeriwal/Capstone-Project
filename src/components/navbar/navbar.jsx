@@ -24,16 +24,16 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <NavLink to="/Hats">Hats</NavLink>
+              <a href="#" >Hats</a>
             </li>
             <li>
-              <NavLink to="/Jackets">Jackets</NavLink>
+              <a href="#" >Jackets</a>
             </li>
             <li>
-              <NavLink to="/Shoes">Shoes</NavLink>
+              <a href="#" >Shoes</a>
             </li>
             <li>
-              <NavLink to="/Tops">Tops</NavLink>
+              <a href="#">Tops</a>
             </li>
           </ul>
         </div>
@@ -53,9 +53,7 @@ const Navbar = () => {
             <li>
               <a
                 href="https://www.linkedin.com/in/shruti-periwal-11400b213/"
-                target="_blank
-                        
-                        "
+                target="_blank"
               >
                 <BsLinkedin className="linklin" />
               </a>
