@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import './slider.css';
+import BtnSlider from './btnslider';
+import SliderData from './sliderdata';
 
 const slider = () => {
   return (
-    <div>slider</div>
+    <>
+        <div>
+            
+        </div>
+    </>
   )
 }
 
