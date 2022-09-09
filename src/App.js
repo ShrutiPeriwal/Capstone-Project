@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar/navbar';
-import Slider from './components/Slider/slider';
+import ControlledCarousel from './components/Slider/slider';
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Slider />
+      <ControlledCarousel />
     </div>
   )
 }
