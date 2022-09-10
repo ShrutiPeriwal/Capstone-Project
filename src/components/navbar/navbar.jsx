@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { FiLogIn } from "react-icons/fi";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -42,9 +41,14 @@ const Navbar = () => {
         <div className="navbar-media">
           <ul className="media">
             <li>
-              <link to="/signin">
-                <FiLogIn className="login" />
-              </link>
+              <Link to="/signin" className="login">
+              SignIn
+              </Link>
+            </li>
+            <li>
+              <Link to="/signup" className="signup">
+                SignUp
+              </Link>
             </li>
             <li>
               <a href="#">

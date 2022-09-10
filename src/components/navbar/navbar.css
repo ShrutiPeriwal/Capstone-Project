@@ -101,9 +101,13 @@ li {
 }
 
 .login {
-    color: #3b5998;
+    color: black;
+    margin-right: 10px;
 }
 
+.signup {
+    color: black;
+}
 .cart {
     color: #c32aa3;
 }
