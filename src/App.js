@@ -2,16 +2,17 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar/navbar';
-import ControlledCarousel from './components/Slider/slider';
-import CardComponent from './components/card/card.jsx';
+import SignIn from './components/signin/signin'
+import Footer from './components/footer/footer';
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <ControlledCarousel />
-      <h3 className="heading">Top Selling Products</h3>
-      <CardComponent />
+      
+     
+      <Footer /> 
+      <SignIn />
     </div>
   )
 }

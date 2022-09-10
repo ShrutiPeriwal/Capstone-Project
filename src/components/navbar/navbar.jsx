@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { FiLogIn } from "react-icons/fi";
-import { BsLinkedin } from "react-icons/bs";
+
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { NavLink } from 'react-router-dom';
+
+import ControlledCarousel from '../Slider/slider';
+import CardComponent from '../card/card';
+
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -41,7 +44,7 @@ const Navbar = () => {
         <div className="navbar-media">
           <ul className="media">
             <li>
-              <a href="#">
+              <a href="/ecommercewebsite/src/components/signin/signin.jsx">
                 <FiLogIn className="login" />
               </a>
             </li>
@@ -50,14 +53,7 @@ const Navbar = () => {
                 <AiOutlineShoppingCart className="cart" />
               </a>
             </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/shruti-periwal-11400b213/"
-                target="_blank"
-              >
-                <BsLinkedin className="linklin" />
-              </a>
-            </li>
+            
           </ul>
 
           {/* hamburget menu start  */}
@@ -68,6 +64,9 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <ControlledCarousel />
+      <h3 className="heading">Top Selling Products</h3>
+      <CardComponent />
     </>
   );
 };
