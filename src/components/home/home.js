@@ -7,11 +7,11 @@ import Footer from '../footer/footer.jsx';
 const home = () => {
   return (
     <div>
-        <Navigation />
+        {/* <Navigation /> */}
         <Slider />
         <h3 className="heading">Top Selling Products</h3>
         <Card />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

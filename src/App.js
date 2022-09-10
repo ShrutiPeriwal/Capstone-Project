@@ -3,18 +3,23 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/home/home';
+import Navigation from './components/navbar/navbar.jsx';
+import Footer from './components/footer/footer.jsx'
 import SignIn from './components/signin/signin.jsx';
 import SignUp from './components/signup/signup';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
+    
     <BrowserRouter>
+    <Navigation />
       <Routes>
         <Route  path='/' element={<Home />}/>
         <Route path='/signin' element={<SignIn />}/>
         <Route path='/signup' element={<SignUp />}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
