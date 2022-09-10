@@ -5,9 +5,7 @@ import { FiLogIn } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import ControlledCarousel from '../Slider/slider';
-import CardComponent from '../card/card';
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -44,9 +42,9 @@ const Navbar = () => {
         <div className="navbar-media">
           <ul className="media">
             <li>
-              <a href="/ecommercewebsite/src/components/signin/signin.jsx">
+              <link to="/signin">
                 <FiLogIn className="login" />
-              </a>
+              </link>
             </li>
             <li>
               <a href="#">
@@ -64,9 +62,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <ControlledCarousel />
-      <h3 className="heading">Top Selling Products</h3>
-      <CardComponent />
+    
     </>
   );
 };
