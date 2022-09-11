@@ -55,14 +55,14 @@ class Hat extends React.Component {
                 />
                 <CardContent className="CardContent">
                   <Typography gutterBottom variant="h5" component="div">
-                  {userInfo.Name}
+                  Product Name - {userInfo.Name}
                   </Typography>
                   <Typography variant="h6" color="text.secondary">
-                  {userInfo.Price}
+                  Price - {userInfo.Price}
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Add to cart</Button>
+                  <Button size="small" className="btn">Add to cart</Button>
                 </CardActions>
               </Card>
             </>
