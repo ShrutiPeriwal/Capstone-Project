@@ -1,4 +1,5 @@
 import React from "react";
+import './hat.css';
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -45,26 +46,23 @@ class Hat extends React.Component {
                             <button>Add to Cart</button>
                         </div> */}
 
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 345 }} className="Card">
                 <CardMedia
                   component="img"
                   height="140"
                   image={userInfo.path}
-                  alt="green iguana"
+                  alt="Hats"
                 />
-                <CardContent>
+                <CardContent className="CardContent">
                   <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                  {userInfo.Name}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                  <Typography variant="h6" color="text.secondary">
+                  {userInfo.Price}
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
+                  <Button size="small">Add to cart</Button>
                 </CardActions>
               </Card>
             </>
