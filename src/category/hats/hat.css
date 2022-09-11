@@ -3,6 +3,8 @@
 .Card {
     margin-top: 1%;
     margin-left: 5%;
+    display: grid;
+    display: inline-grid;
 }
 
 .CardContent {
@@ -12,7 +14,6 @@
 
 .btn {
     margin-left: 125px;
-    border: 1px solid grey;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    border: 1px solid black;
+   
 }
