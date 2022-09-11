@@ -62,7 +62,7 @@ class Hat extends React.Component {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small" className="btn">Add to cart</Button>
+                  <Button size="small" className='btn'>Add to cart</Button>
                 </CardActions>
               </Card>
             </>
