@@ -12,7 +12,7 @@ export default function MediaCard() {
     <>
       {CardData.map((id, Name, Price, path) => {
         return (
-          <Card
+          <Card className="Card"
             sx={{ maxWidth: 345 }}
             style={{
               marginTop: "10px",
@@ -26,10 +26,10 @@ export default function MediaCard() {
             <CardMedia component="img" height="140" image={id.path} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Product Name : {id.Name}
+                 Name : {id.Name}
               </Typography>
               <Typography variant="h6" color="text.secondary">
-                Product Price : {id.Price}
+                Price : {id.Price}
               </Typography>
             </CardContent>
             <CardActions>

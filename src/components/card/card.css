@@ -14,3 +14,7 @@
 .btn {
     margin-left: 140px;
 }
+
+.Card {
+    grid-template-columns: "repeat(autp-fit,minmax(250px,1fr))",
+}
