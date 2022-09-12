@@ -10,9 +10,10 @@ import { CardData } from "./carddata";
 export default function MediaCard() {
   return (
     <>
+    <div className="Card">
       {CardData.map((id, Name, Price, path) => {
         return (
-          <Card className="Card"
+          <Card 
             sx={{ maxWidth: 345 }}
             style={{
               marginTop: "10px",
@@ -38,6 +39,7 @@ export default function MediaCard() {
           </Card>
         );
       })}
+      </div>
     </>
   );
 }
