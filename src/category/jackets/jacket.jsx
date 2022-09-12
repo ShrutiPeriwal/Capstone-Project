@@ -5,20 +5,20 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { HatData } from "./hatdata";
+import { JacketData } from "./jacketdata";
 
-export default function HatCard() {
+export default function JacketCard() {
   return (
     <>
-      {HatData.map((id, Name, Price, path) => {
+      {JacketData.map((id, Name, Price, path) => {
         return (
           <Card
             sx={{ maxWidth: 345 }}
             style={{
-              marginTop: "20px",
-              marginBottom: "20px",
-              marginLeft: "130px",
-              marginRight: "-7px",
+              marginTop: "10px",
+              marginBottom: "10px",
+              marginLeft: "100px",
+              marginRight: "-4px",
               display: "grid",
               display: "inline-grid",
             }}
@@ -33,7 +33,7 @@ export default function HatCard() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button variant="outlined" style={{alignItems: "center"}}>Add To Cart</Button>
+              <Button variant="outlined" style={{marginLeft: "30px"}}>Add To Cart</Button>
             </CardActions>
           </Card>
         );

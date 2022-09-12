@@ -26,14 +26,14 @@ export default function ShoeCard() {
             <CardMedia component="img" height="140" image={id.path} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Product Name : {id.Name}
+                Name : {id.Name}
               </Typography>
               <Typography variant="h6" color="text.secondary">
-                Product Price : {id.Price}
+                Price : {id.Price}
               </Typography>
             </CardContent>
             <CardActions>
-              <Button variant="outlined" style={{marginLeft: "50px"}}>Add To Cart</Button>
+              <Button variant="outlined" style={{marginLeft: "30px"}}>Add To Cart</Button>
             </CardActions>
           </Card>
         );

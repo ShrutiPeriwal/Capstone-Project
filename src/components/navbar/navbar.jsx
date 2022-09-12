@@ -27,7 +27,7 @@ const Navbar = () => {
               <Link to='/Hat'>Hats</Link>
             </li>
             <li>
-              <a href="#" >Jackets</a>
+            <Link to='/jacket'>Jackets</Link>
             </li>
             <li>
             <Link to='/shoe'>Shoes</Link>

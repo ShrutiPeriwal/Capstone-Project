@@ -8,6 +8,7 @@ import Footer from './components/footer/footer.jsx'
 import SignIn from './components/signin/signin.jsx';
 import SignUp from './components/signup/signup';
 import Hat from './category/hats/hat';
+import Jacket from './category/jackets/jacket';
 import Shoe from './category/shoes/shoe';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/signin' element={<SignIn />}/>
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/hat' element={<Hat />}/>
+        <Route path='/jacket' element={<Jacket />}/>
         <Route path='/shoe' element={<Shoe />}/>
       </Routes>
       <Footer />
