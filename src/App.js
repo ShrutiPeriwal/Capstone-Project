@@ -10,6 +10,8 @@ import SignUp from './components/signup/signup';
 import Hat from './category/hats/hat';
 import Jacket from './category/jackets/jacket';
 import Shoe from './category/shoes/shoe';
+import Top from './category/tops/top';
+import AddToCart from './components/addtocart/cart';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -24,6 +26,8 @@ const App = () => {
         <Route path='/hat' element={<Hat />}/>
         <Route path='/jacket' element={<Jacket />}/>
         <Route path='/shoe' element={<Shoe />}/>
+        <Route path='/top' element={<Top />}/>
+        <Route path='/addtocart' element={<AddToCart />}/>
       </Routes>
       <Footer />
       

@@ -1,7 +1,7 @@
 export const TopData = [
     {
       id: "1",
-      Name: "Black Shoes",
+      Name: "Black Top",
       Price: 800,
       path: "https://images.pexels.com/photos/5214139/pexels-photo-5214139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },

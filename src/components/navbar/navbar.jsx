@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to='/shoe'>Shoes</Link>
             </li>
             <li>
-              <a href="#">Tops</a>
+            <Link to='/top'>Tops</Link>
             </li>
           </ul>
         </div>
@@ -51,9 +51,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/addtocart">
                 <AiOutlineShoppingCart className="cart" />
-              </a>
+              </Link>
             </li>
             
           </ul>
