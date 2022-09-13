@@ -10,7 +10,7 @@ import { TopData } from "./topdata";
 export default function TopCard() {
   return (
     <>
-      {ShoeData.map(( id ) => {
+      {TopData.map(( id ) => {
         return (
           <Card
             sx={{ maxWidth: 345 }}
