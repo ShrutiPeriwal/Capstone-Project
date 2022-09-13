@@ -1,4 +1,4 @@
-export const ShoeData = [
+export const TopData = [
     {
       id: "1",
       Name: "Black Shoes",

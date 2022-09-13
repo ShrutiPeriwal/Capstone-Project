@@ -5,12 +5,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { ShoeData } from "./shoedata";
+import { TopData } from "./topdata";
 
-export default function ShoeCard() {
+export default function TopCard() {
   return (
     <>
-      {ShoeData.map((id, Name, Price, path) => {
+      {ShoeData.map(( id ) => {
         return (
           <Card
             sx={{ maxWidth: 345 }}
