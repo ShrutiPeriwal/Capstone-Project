@@ -7,15 +7,15 @@ export const CardData = [
   },
   {
     id: "2",
-    Name: "Causal Hat",
-    Price: 300,
-    path: "https://images.pexels.com/photos/954254/pexels-photo-954254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Name: "Adidas Jacket",
+    Price: 1800,
+    path: "https://images.pexels.com/photos/1192601/pexels-photo-1192601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: "3",
-    Name: "LA Hat",
-    Price: 450,
-    path: "https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Name: "Causal Shoes",
+    Price: 750,
+    path: "https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: "4",
