@@ -7,10 +7,14 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { TopData } from "./topdata";
 
+import { useCart } from "react-use-cart";
+
 export default function TopCard() {
+  const { addItem } = useCart();
+
   return (
     <>
-      {TopData.map(( id ) => {
+      {TopData.map((id) => {
         return (
           <Card
             sx={{ maxWidth: 345 }}
@@ -33,7 +37,11 @@ export default function TopCard() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button variant="outlined" style={{marginLeft: "30px"}}>Add To Cart</Button>
+              <Button variant="outlined" style={{ marginLeft: "30px" }}
+              onClick={() => addItem(id.item)}
+              >
+                Add To Cart
+              </Button>
             </CardActions>
           </Card>
         );

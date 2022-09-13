@@ -14,10 +14,12 @@ import Top from './category/tops/top';
 import AddToCart from './components/addtocart/cart';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartProvider } from 'react-use-cart';
 
 const App = () => {
   return (
     <BrowserRouter>
+    <CartProvider>
     <Navigation />
       <Routes>
         <Route  path='/' element={<Home />}/>
@@ -30,7 +32,7 @@ const App = () => {
         <Route path='/addtocart' element={<AddToCart />}/>
       </Routes>
       <Footer />
-      
+      </CartProvider>
     </BrowserRouter>
   )
 }
