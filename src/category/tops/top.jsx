@@ -14,7 +14,8 @@ export default function TopCard() {
 
   return (
     <>
-      {TopData.map((id) => {
+      {TopData.map((props) => {
+        console.log(props.id)
         return (
           <Card
             sx={{ maxWidth: 345 }}
@@ -27,18 +28,20 @@ export default function TopCard() {
               display: "inline-grid",
             }}
           >
-            <CardMedia component="img" height="140" image={id.path} />
+            <CardMedia component="img" height="140" image={props.path} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Name : {id.Name}
+                Name : {props.Name}
               </Typography>
               <Typography variant="h6" color="text.secondary">
-                Price : {id.Price}
+                Price : {props.Price}
               </Typography>
             </CardContent>
             <CardActions>
               <Button variant="outlined" style={{ marginLeft: "30px" }}
-              onClick={() => addItem(id.item)}
+              onClick={() => 
+        
+              addItem(props.item)}
               >
                 Add To Cart
               </Button>
