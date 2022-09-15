@@ -8,6 +8,8 @@ import Typography from "@mui/material/Typography";
 import { useDispatch, useSelector } from "react-redux";
 import { selectImgState, setImgId } from "../../Redux/ModalSlice";
 
+import { CartProvider, useCart } from "react-use-cart";
+
 export default function MediaCard({catName}) {
   const imgId = useSelector((state) => state.modal.value)
   const dispatch = useDispatch()
@@ -15,9 +17,10 @@ export default function MediaCard({catName}) {
     console.log('ImgCLick');
     dispatch(setImgId(e.target.id))
   }
+  const { addItem } = useCart();
   return (
     <>
-        {catName.map((id, Name, Price, path,) => {
+        {catName.map((id) => {
           return (
             <Card className="Card" sx={{ maxWidth: 345 }}>
               <CardMedia
@@ -36,7 +39,7 @@ export default function MediaCard({catName}) {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button variant="outlined">Add To Cart</Button>
+                <Button variant="outlined" onClick={() => addItem(id)}>Add To Cart</Button>
               </CardActions>
             </Card>
           );
