@@ -14,11 +14,9 @@ import Top from "./category/tops/top";
 import AddToCart from "./components/addtocart/cart";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { CartProvider } from "react-use-cart";
 
 const App = () => {
   return (
-    <CartProvider>
       <BrowserRouter>
         <Navigation />
         <Routes>
@@ -33,7 +31,6 @@ const App = () => {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </CartProvider>
   );
 };
 

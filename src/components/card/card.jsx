@@ -8,42 +8,40 @@ import Typography from "@mui/material/Typography";
 import { useDispatch, useSelector } from "react-redux";
 import { selectImgState, setImgId } from "../../Redux/ModalSlice";
 
-import { CartProvider, useCart } from "react-use-cart";
-
-export default function MediaCard({catName}) {
-  const imgId = useSelector((state) => state.modal.value)
-  const dispatch = useDispatch()
+export default function MediaCard({ catName }) {
+  const imgId = useSelector((state) => state.modal.value);
+  const dispatch = useDispatch();
   const onImgClick = (e) => {
-    console.log('ImgCLick');
-    dispatch(setImgId(e.target.id))
-  }
-  const { addItem } = useCart();
+    console.log("ImgCLick");
+    dispatch(setImgId(e.target.id));
+  };
+
   return (
     <>
-        {catName.map((id) => {
-          return (
-            <Card className="Card" sx={{ maxWidth: 345 }}>
-              <CardMedia
-                component="img"
-                height="140"
-                image={id.path}
-                id={id.id}
-                onClick={(e) => onImgClick(e)}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Name : {id.Name}
-                </Typography>
-                <Typography variant="h6" color="text.secondary">
-                  Price : {id.Price}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button variant="outlined" onClick={() => addItem(id)}>Add To Cart</Button>
-              </CardActions>
-            </Card>
-          );
-        })}
+      {catName.map((id) => {
+        return (
+          <Card className="Card" sx={{ maxWidth: 345 }}>
+            <CardMedia
+              component="img"
+              height="140"
+              image={id.path}
+              id={id.id}
+              onClick={(e) => onImgClick(e)}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Name : {id.Name}
+              </Typography>
+              <Typography variant="h6" color="text.secondary">
+                Price : {id.Price}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button variant="outlined">Add To Cart</Button>
+            </CardActions>
+          </Card>
+        );
+      })}
     </>
   );
- }
+}
